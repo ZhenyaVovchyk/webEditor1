@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebEditor</title>
+    <link rel="stylesheet" href="./css/gg.css">
+    <script src="./js/3.4.1jquery.min.js"></script>
+    <script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/theme-twilight.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js"></script>
+    <script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/ext-emmet.js">
+    </script>
+    <script src="https://rawgithub.com/nightwing/emmet-core/master/emmet.js"></script>
+    <script src="./js/ace.js" defer></script>
+</head>
+
+<body>
+    <div id="LogoText">
+        <h2>WebEditor</h2>
+    </div>
+    <div id="container">
+        <div id="blocks-tab">
+            <div class="bl" id="bl-1" title="Html"><img width="20" src="img/html.png" alt="html image"></div>
+            <div class="bl" id="bl-2" title="Css"><img width="20" src="img/css.png" alt="css image"></div>
+            <div class="bl" id="bl-3" title="Javascript"><img width="20" src="img/js.png" alt="js image"></div>
+            <div class="bl" id="bl-4" title="Create your simple web page"><img width="20" src="img/icon.png" alt="image"></div>
+            <div class="bl" id="bl-5" title="Create new repositories on GitHub">
+                <a href="https://github.com/new"><img width="20" src="img/githubIcon.png" alt="github image"></a>
+            </div>
+
+            <div class="bl" id="bl-7" title="Clear localStorage"><img width="40" src="img/123.png" alt="delete image"></div>
+
+            <div class="bl" id="bl-6" title="Settings"><img width="20" src="img/settings.png" alt="js image"></div>
+        </div>
+        <div id="blocks">
+            <div class="block" id="html-editor" style="background-color: rgb(38,38,38);"></div>
+            <div class="block" id="css-editor"></div>
+            <div class="block" id="js-editor"></div>
+            <iframe frameborder="0" class="block" id="result"></iframe>
+        </div>
+
+        <div id="modalWindow">
+            <div id="modalHeader">
+                <div id="btnclose"></div>
+            </div>
+            <div id="modalBody"></div>
+            <div id="modalFooter"></div>
+        </div>
+    </div>
+</body>
+
+<!-- <script src="./js/gg.js "></script> -->
+
+</html>
